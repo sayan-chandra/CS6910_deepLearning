@@ -34,7 +34,7 @@
 >15) Test_Acc_With_Best_Model_In_Sweep() computes inference on test data using beam search(width 3/4) after model is done with training basically.
 >16) the SweepParent() function is for running the sweeps is global var WANDB=1 else it will run the custom configuration for model det by me(You can change configs , INSTRUCTIONS are below).
 >> ## How To Run Customised Configuration.
->> USE THE `SweepParent()` FUNCTION ( go to the `else` part that runs when `WANDB IS SET TO 0` ) TO CHANGE ALL THE VARIABLES MENTIONED BELOW FROM POINT 6 TO 25.
+>> USE THE `SweepParent()` FUNCTION ( go to the `else` part that runs when `WANDB IS SET TO 0` ) TO CHANGE ALL THE VARIABLES MENTIONED BELOW FROM POINT 17 to 19.
 >17) set 5 variables a(int),b(int),c(int),d(float),e(string; "vanillaRnn" or "lstm" or "gru") i.e respectively number of encoder/decoder layers , input_embedding_size for encoder/decoder embedding, hidden_layer_size for encoder/decoder rnn cells ,dropout for encoder/decoder rnn cells , cell_type as type of rnn cell,
 >18) set 4 variables f(string; "adam" or "sgd" or "rmsprop"),g(float),h(int),i(int) i.e. respectively optimizer function, learning_rate, number of epochs, batch_size
 >19) you can find this 5+4=9 variables in the `else` part of SweepParent function `24th` and `25th` line. Set them as per your wish if you want according to instruction given in point 17 and 18 above.
@@ -73,7 +73,7 @@
 >15) Test_Acc_With_Best_Model_In_Sweep() computes inference on test data using beam search(width 3/4) after model is done with training basically.
 >16) the SweepParent() function is for running the sweeps is global var WANDB=1 else it will run the custom configuration for model det by me(You can change configs , INSTRUCTIONS are below).
 >> ## How To Run Customised Configuration.
->> USE THE `SweepParent()` FUNCTION ( go to the `else` part that runs when `WANDB IS SET TO 0` ) TO CHANGE ALL THE VARIABLES MENTIONED BELOW FROM POINT 6 TO 25.
+>> USE THE `SweepParent()` FUNCTION ( go to the `else` part that runs when `WANDB IS SET TO 0` ) TO CHANGE ALL THE VARIABLES MENTIONED BELOW FROM POINT 17 to 19.
 >17) set 5 variables a(int),b(int),c(int),d(float),e(string; "vanillaRnn" or "lstm" or "gru") i.e respectively number of encoder/decoder layers , input_embedding_size for encoder/decoder embedding, hidden_layer_size for encoder/decoder rnn cells ,dropout for encoder/decoder rnn cells , cell_type as type of rnn cell,
 >18) set 4 variables f(string; "adam" or "sgd" or "rmsprop"),g(float),h(int),i(int) i.e. respectively optimizer function, learning_rate, number of epochs, batch_size
 >19) you can find this 5+4=9 variables in the `else` part of SweepParent function `24th` and `25th` line. Set them as per your wish if you want according to instruction given in point 17 and 18 above.
